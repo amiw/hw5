@@ -122,7 +122,10 @@ void draw() {
   rightPaddle.draw();
   drawScores();
   if(rightScore==10|| leftScore==10){
-setup();}
+setup();
+rightScore=0;
+leftScore=0;
+draw();}
 }
 
 void mousePressed() {
